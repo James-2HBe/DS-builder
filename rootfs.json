@@ -193,5 +193,18 @@
     "version": "v20260527-060158",
     "build_date": "20260527",
     "author": "Droidspaces developers"
+  },
+  {
+    "name": "Azure Linux 3.0 - Minimal",
+    "distro": "Azure Linux",
+    "description": "Azure Linux 3.0 rootfs with basic packages.",
+    "architecture": "aarch64",
+    "file": "AzureLinux-3.0-Minimal",
+    "download_url": "",
+    "sha256": "",
+    "size_bytes": 0,
+    "version": "",
+    "build_date": "",
+    "author": ""
   }
 ]
