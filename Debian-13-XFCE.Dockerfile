@@ -112,6 +112,9 @@ RUN apt-get update && \
     pulseaudio \
     pulseaudio-utils \
     pavucontrol \
+    # VirGL guest drivers (for virglrenderer_android)
+    libgl1-mesa-dri \
+    mesa-vulkan-drivers \
     # XFCE Desktop Environment and essential tools
     xfce4 \
     desktop-base \
