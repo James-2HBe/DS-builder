@@ -1,0 +1,15 @@
+#!/bin/sh
+
+CONFIG=/run/droidspaces/container.config
+
+export DISPLAY=:5
+
+if grep -q 'enable_pulseaudio=1' "$CONFIG" 2>/dev/null; then
+    export PULSE_SERVER=unix:/tmp/.pulse-socket
+fi
+
+if grep -q 'enable_virgl=1' "$CONFIG" 2>/dev/null; then
+    export GALLIUM_DRIVER=virpipe
+fi
+
+exec /usr/bin/startxfce4
